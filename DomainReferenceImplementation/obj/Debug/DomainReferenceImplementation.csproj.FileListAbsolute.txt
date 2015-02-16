@@ -1,0 +1,16 @@
+c:\dev\NMNL\ZamboniWeb\MyNance\DomainReferenceImplementation\bin\Debug\DomainReferenceImplementation.exe.config
+c:\dev\NMNL\ZamboniWeb\MyNance\DomainReferenceImplementation\bin\Debug\DomainReferenceImplementation.exe
+c:\dev\NMNL\ZamboniWeb\MyNance\DomainReferenceImplementation\bin\Debug\DomainReferenceImplementation.pdb
+c:\dev\NMNL\ZamboniWeb\MyNance\DomainReferenceImplementation\bin\Debug\Domain.dll
+c:\dev\NMNL\ZamboniWeb\MyNance\DomainReferenceImplementation\bin\Debug\Domain.pdb
+c:\dev\NMNL\ZamboniWeb\MyNance\DomainReferenceImplementation\obj\Debug\DomainReferenceImplementation.csprojResolveAssemblyReference.cache
+c:\dev\NMNL\ZamboniWeb\MyNance\DomainReferenceImplementation\obj\Debug\DomainReferenceImplementation.exe
+c:\dev\NMNL\ZamboniWeb\MyNance\DomainReferenceImplementation\obj\Debug\DomainReferenceImplementation.pdb
+C:\dev\Nance\DomainReferenceImplementation\bin\Debug\DomainReferenceImplementation.exe.config
+C:\dev\Nance\DomainReferenceImplementation\bin\Debug\DomainReferenceImplementation.exe
+C:\dev\Nance\DomainReferenceImplementation\bin\Debug\DomainReferenceImplementation.pdb
+C:\dev\Nance\DomainReferenceImplementation\bin\Debug\Domain.dll
+C:\dev\Nance\DomainReferenceImplementation\bin\Debug\Domain.pdb
+C:\dev\Nance\DomainReferenceImplementation\obj\Debug\DomainReferenceImplementation.csprojResolveAssemblyReference.cache
+C:\dev\Nance\DomainReferenceImplementation\obj\Debug\DomainReferenceImplementation.exe
+C:\dev\Nance\DomainReferenceImplementation\obj\Debug\DomainReferenceImplementation.pdb

@@ -1,0 +1,14 @@
+C:\dev\Nance\EFRepository\bin\Debug\Repository.dll.config
+C:\dev\Nance\EFRepository\bin\Debug\Repository.dll
+C:\dev\Nance\EFRepository\bin\Debug\Repository.pdb
+C:\dev\Nance\EFRepository\bin\Debug\Domain.dll
+C:\dev\Nance\EFRepository\bin\Debug\EntityFramework.dll
+C:\dev\Nance\EFRepository\bin\Debug\Domain.pdb
+C:\dev\Nance\EFRepository\bin\Debug\EntityFramework.xml
+C:\dev\Nance\EFRepository\obj\Debug\EFRepository.csprojResolveAssemblyReference.cache
+C:\dev\Nance\EFRepository\obj\Debug\Nance.EFRepository.Migrations.InitialMigration.resources
+C:\dev\Nance\EFRepository\obj\Debug\EFRepository.csproj.GenerateResource.Cache
+C:\dev\Nance\EFRepository\obj\Debug\Repository.dll
+C:\dev\Nance\EFRepository\obj\Debug\Repository.pdb
+C:\dev\Nance\EFRepository\obj\Debug\Nance.EFRepository.Migrations.BaseItems.resources
+C:\dev\Nance\EFRepository\obj\Debug\Nance.EFRepository.Migrations.testmig.resources
