@@ -14,3 +14,11 @@ C:\dev\Nance\DomainReferenceImplementation\bin\Debug\Domain.pdb
 C:\dev\Nance\DomainReferenceImplementation\obj\Debug\DomainReferenceImplementation.csprojResolveAssemblyReference.cache
 C:\dev\Nance\DomainReferenceImplementation\obj\Debug\DomainReferenceImplementation.exe
 C:\dev\Nance\DomainReferenceImplementation\obj\Debug\DomainReferenceImplementation.pdb
+C:\devgit\nance\DomainReferenceImplementation\bin\Debug\DomainReferenceImplementation.exe.config
+C:\devgit\nance\DomainReferenceImplementation\bin\Debug\DomainReferenceImplementation.exe
+C:\devgit\nance\DomainReferenceImplementation\bin\Debug\DomainReferenceImplementation.pdb
+C:\devgit\nance\DomainReferenceImplementation\bin\Debug\Domain.dll
+C:\devgit\nance\DomainReferenceImplementation\bin\Debug\Domain.pdb
+C:\devgit\nance\DomainReferenceImplementation\obj\Debug\DomainReferenceImplementation.csprojResolveAssemblyReference.cache
+C:\devgit\nance\DomainReferenceImplementation\obj\Debug\DomainReferenceImplementation.exe
+C:\devgit\nance\DomainReferenceImplementation\obj\Debug\DomainReferenceImplementation.pdb

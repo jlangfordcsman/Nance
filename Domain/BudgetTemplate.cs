@@ -89,9 +89,15 @@ namespace Nance.Domain
             {
                 if (itemTemplate.InPeriod(budget.Period))
                 {
-                    budget
-                        .BudgetedItems
-                        .Add(itemTemplate.Create(budget.Period));
+                    itemTemplate
+                        .Create(budget.Period)
+                        .ToList()
+                        .ForEach(item =>
+                            {
+                                budget
+                                .BudgetedItems
+                                .Add(item);
+                            });
                 }
             }
 
@@ -100,47 +106,7 @@ namespace Nance.Domain
 
         private BudgetPeriod GetTwiceAMonthPeriod(DateTime date)
         {
-            BudgetPeriod period;
-            period = new BudgetPeriod();
 
-            int firstDay = FirstPayDay == null ? 1 : FirstPayDay.Value;
-            int secondDay = SecondPayDay == null ? 15 : SecondPayDay.Value;
-
-            if (secondDay < firstDay)
-            {
-                secondDay = firstDay + 7;
-            }
-
-            if (secondDay > 28)
-            {
-                secondDay = (int)SpecialDays.Last;
-            }
-
-
-            DateTime prevMonth = date.AddMonths(-1);
-            DateTime nextMonth = date.AddMonths(1);
-
-            DateTime secondDayLastMonth = new DateTime(prevMonth.Year, prevMonth.Month, GetDay(prevMonth, secondDay));
-            DateTime firstDayThisMonth = new DateTime(date.Year, date.Month, GetDay(date, firstDay));
-            DateTime secondDayThisMonth = new DateTime(date.Year, date.Month, GetDay(date, secondDay));
-            DateTime firstDayNextMonth = new DateTime(nextMonth.Year, nextMonth.Month, GetDay(nextMonth, firstDay));
-
-            if (secondDayLastMonth < date && date < firstDayThisMonth)
-            {
-                period.Start = secondDayLastMonth;
-                period.End = firstDayThisMonth;
-            }
-            else if (firstDayThisMonth < date && date < secondDayThisMonth)
-            {
-                period.Start = firstDayThisMonth;
-                period.End = secondDayThisMonth;
-            }
-            else
-            {
-                period.Start = secondDayThisMonth;
-                period.End = firstDayNextMonth;
-            }
-            return period;
         }
 
         private BudgetPeriod GetOnceEveryTwoWeeksPeriod(DateTime date)
@@ -171,59 +137,6 @@ namespace Nance.Domain
             return period;
         }
 
-        private BudgetPeriod GetOnceAMonthPeriod(DateTime date)
-        {
-            BudgetPeriod period = new BudgetPeriod();
-
-            int startDayOfThisMonth = GetDay(date, FirstPayDay.Value);
-
-            DateTime thisMonthsStartDate = new DateTime(date.Year, date.Month, startDayOfThisMonth);
-
-            if (date <= thisMonthsStartDate)
-            {
-                DateTime prevMonth = date.AddMonths(-1);
-                int startDayOfLastMonth = GetDay(prevMonth, FirstPayDay.Value);
-                period.Start = new DateTime(prevMonth.Year, prevMonth.Month, startDayOfLastMonth);
-
-                period.End = thisMonthsStartDate;
-            }
-            else
-            {
-                DateTime nextMonth = date.AddMonths(1);
-                int startDayOfNextMonth = GetDay(nextMonth, FirstPayDay.Value);
-
-                period.Start = thisMonthsStartDate;
-                period.End = new DateTime(nextMonth.Year, nextMonth.Month, startDayOfNextMonth);
-            }
-
-            return period;
-        }
-
-        private static int GetDay(DateTime date, int day)
-        {
-            if (day < BudgetTemplate.MinDay && day != (int)SpecialDays.First)
-            {
-                throw new InvalidOperationException("The day is less than the minimum allowed day");
-            }
-
-            if (day > BudgetTemplate.MaxDay && day != (int)SpecialDays.Last)
-            {
-                throw new InvalidOperationException("The day is greater than the maximum allowed day or SpecialDays.Last");
-            }
-
-            int actualDay = day;
-
-            if (day == (int)SpecialDays.First)
-            {
-                actualDay = 1;
-            }
-            else if (day == (int)SpecialDays.Last)
-            {
-                actualDay = DateTime.DaysInMonth(date.Year, date.Month);
-            }
-
-            return actualDay;
-        }
 
     }
 }

@@ -48,9 +48,10 @@
     <Compile Include="BudgetTemplate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BudgetDebit.cs" />
-    <Compile Include="RecurringItemRule.cs" />
+    <Compile Include="RecurringRule.cs" />
     <Compile Include="RecursEveryPeriodRule.cs" />
     <Compile Include="RecursMonthlyRule.cs" />
+    <Compile Include="RecursTwiceAMonthRule.cs" />
     <Compile Include="RuleAction.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
